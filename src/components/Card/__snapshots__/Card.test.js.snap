@@ -107,7 +107,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "0Heart's Home",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -124,7 +124,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "0Lord of Heart's Home",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -141,7 +141,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1King of the Fingers (historical)",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -175,7 +175,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "0Lady Forlorn",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -269,7 +269,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "0Heart's Home",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -286,7 +286,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "0Lord of Heart's Home",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -303,7 +303,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1King of the Fingers (historical)",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -337,7 +337,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "0Lady Forlorn",
           "nodeType": "host",
           "props": Object {
             "children": Array [

@@ -23,7 +23,7 @@ describe('App', () => {
 
   it('should match snapshot when houses are loaded', () => {
     wrapper.setState({ loaded: true })
-    
+
     expect(wrapper).toMatchSnapshot();
   });
 

@@ -387,7 +387,7 @@ ShallowWrapper {
           false,
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "0House Corbray of Heart's Home",
             "nodeType": "function",
             "props": Object {
               "name": "House Corbray of Heart's Home",
@@ -398,7 +398,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "1House Dayne of Starfall",
             "nodeType": "function",
             "props": Object {
               "name": "House Dayne of Starfall",
@@ -516,7 +516,7 @@ ShallowWrapper {
             false,
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "0House Corbray of Heart's Home",
               "nodeType": "function",
               "props": Object {
                 "name": "House Corbray of Heart's Home",
@@ -527,7 +527,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "1House Dayne of Starfall",
               "nodeType": "function",
               "props": Object {
                 "name": "House Dayne of Starfall",

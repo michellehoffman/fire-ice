@@ -6,15 +6,15 @@ export const Card = ({ name, founded, seats, titles, coatOfArms, ancestralWeapon
   }
 
   const renderSeats = () => {
-    return seats.map( seat => <p>Seats: { seat }</p> )
+    return seats.map( (seat, index) => <p key={ index + seat }>Seats: { seat }</p> )
   }
 
   const renderTitles = () => {
-    return titles.map( title => <p>Titles: { title }</p> )
+    return titles.map( (title, index) => <p key={ index + title }>Titles: { title }</p> )
   }
 
   const renderWeapons = () => {
-    return ancestralWeapons.map( weapon => <p>Ancestral Weapons: { weapon }</p> )
+    return ancestralWeapons.map( (weapon, index) => <p key={ index + weapon }>Ancestral Weapons: { weapon }</p> )
   }
 
   const renderWords = () => {

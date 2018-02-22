@@ -26,7 +26,9 @@ export class App extends Component {
   }
 
   renderCards = () => {
-    return this.props.houses.map( house => <Card { ...house } />)
+    return this.props.houses.map( (house, index) => (
+      <Card key = { index + house.name } { ...house } />)
+    )
   }
 
   render() {
