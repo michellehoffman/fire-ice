@@ -1,6 +1,6 @@
 import React from 'react';
 import { App, mapStateToProps, mapDispatchToProps } from './App';
-import { getHouses } from '../../api/apiCall';
+import { getHouses, getSwornMembers } from '../../api/apiCall';
 import { shallow } from 'enzyme';
 
 describe('App', () => {
