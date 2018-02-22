@@ -5,6 +5,10 @@ export const Card = ({ name, founded, seats, titles, coatOfArms, ancestralWeapon
     return founded !== '' ? founded : 'N/A'
   }
 
+  const renderSeats = () => {
+    return seats.map( seat => <p>Seats: { seat }</p> )
+  }
+
   const renderTitles = () => {
     return titles.map( title => <p>Titles: { title }</p> )
   }
@@ -21,7 +25,7 @@ export const Card = ({ name, founded, seats, titles, coatOfArms, ancestralWeapon
     <div>
       <h2>{ name }</h2>
       <h3>Founded: { cleanFounded() }</h3>
-      <p>Seats: { seats }</p>
+      { renderSeats() }
       { renderTitles() }
       <p>Coat of Arms: { coatOfArms }</p>
       { renderWeapons() }

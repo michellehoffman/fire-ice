@@ -1,0 +1,368 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    ancestralWeapons={
+        Array [
+            "Lady Forlorn",
+          ]
+    }
+    coatOfArms="Three black ravens in flight,"
+    founded=""
+    name="House Corbray of Heart's Home"
+    seats={
+        Array [
+            "Heart's Home",
+          ]
+    }
+    titles={
+        Array [
+            "Lord of Heart's Home",
+            "King of the Fingers (historical)",
+          ]
+    }
+    words=""
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          House Corbray of Heart's Home
+</h2>,
+        <h3>
+          Founded: 
+          N/A
+</h3>,
+        Array [
+          <p>
+            Seats: 
+            Heart's Home
+</p>,
+        ],
+        Array [
+          <p>
+            Titles: 
+            Lord of Heart's Home
+</p>,
+          <p>
+            Titles: 
+            King of the Fingers (historical)
+</p>,
+        ],
+        <p>
+          Coat of Arms: 
+          Three black ravens in flight,
+</p>,
+        Array [
+          <p>
+            Ancestral Weapons: 
+            Lady Forlorn
+</p>,
+        ],
+        null,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "House Corbray of Heart's Home",
+        },
+        "ref": null,
+        "rendered": "House Corbray of Heart's Home",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Founded: ",
+            "N/A",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Founded: ",
+          "N/A",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Seats: ",
+            "Heart's Home",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Seats: ",
+          "Heart's Home",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Titles: ",
+            "Lord of Heart's Home",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Titles: ",
+          "Lord of Heart's Home",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Titles: ",
+            "King of the Fingers (historical)",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Titles: ",
+          "King of the Fingers (historical)",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Coat of Arms: ",
+            "Three black ravens in flight,",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Coat of Arms: ",
+          "Three black ravens in flight,",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Ancestral Weapons: ",
+            "Lady Forlorn",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Ancestral Weapons: ",
+          "Lady Forlorn",
+        ],
+        "type": "p",
+      },
+      null,
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            House Corbray of Heart's Home
+</h2>,
+          <h3>
+            Founded: 
+            N/A
+</h3>,
+          Array [
+            <p>
+              Seats: 
+              Heart's Home
+</p>,
+          ],
+          Array [
+            <p>
+              Titles: 
+              Lord of Heart's Home
+</p>,
+            <p>
+              Titles: 
+              King of the Fingers (historical)
+</p>,
+          ],
+          <p>
+            Coat of Arms: 
+            Three black ravens in flight,
+</p>,
+          Array [
+            <p>
+              Ancestral Weapons: 
+              Lady Forlorn
+</p>,
+          ],
+          null,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "House Corbray of Heart's Home",
+          },
+          "ref": null,
+          "rendered": "House Corbray of Heart's Home",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Founded: ",
+              "N/A",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Founded: ",
+            "N/A",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Seats: ",
+              "Heart's Home",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Seats: ",
+            "Heart's Home",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Titles: ",
+              "Lord of Heart's Home",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Titles: ",
+            "Lord of Heart's Home",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Titles: ",
+              "King of the Fingers (historical)",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Titles: ",
+            "King of the Fingers (historical)",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Coat of Arms: ",
+              "Three black ravens in flight,",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Coat of Arms: ",
+            "Three black ravens in flight,",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Ancestral Weapons: ",
+              "Lady Forlorn",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Ancestral Weapons: ",
+            "Lady Forlorn",
+          ],
+          "type": "p",
+        },
+        null,
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
