@@ -48,17 +48,20 @@ ShallowWrapper {
 </h3>,
         Array [
           <p>
-            Seats: 
+            Seats
+            : 
             Heart's Home
 </p>,
         ],
         Array [
           <p>
-            Titles: 
+            Titles
+            : 
             Lord of Heart's Home
 </p>,
           <p>
-            Titles: 
+            Titles
+            : 
             King of the Fingers (historical)
 </p>,
         ],
@@ -68,7 +71,8 @@ ShallowWrapper {
 </p>,
         Array [
           <p>
-            Ancestral Weapons: 
+            Ancestral Weapons
+            : 
             Lady Forlorn
 </p>,
         ],
@@ -113,13 +117,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Seats: ",
+            "Seats",
+            ": ",
             "Heart's Home",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Seats: ",
+          "Seats",
+          ": ",
           "Heart's Home",
         ],
         "type": "p",
@@ -130,13 +136,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Titles: ",
+            "Titles",
+            ": ",
             "Lord of Heart's Home",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Titles: ",
+          "Titles",
+          ": ",
           "Lord of Heart's Home",
         ],
         "type": "p",
@@ -147,13 +155,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Titles: ",
+            "Titles",
+            ": ",
             "King of the Fingers (historical)",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Titles: ",
+          "Titles",
+          ": ",
           "King of the Fingers (historical)",
         ],
         "type": "p",
@@ -181,13 +191,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Ancestral Weapons: ",
+            "Ancestral Weapons",
+            ": ",
             "Lady Forlorn",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Ancestral Weapons: ",
+          "Ancestral Weapons",
+          ": ",
           "Lady Forlorn",
         ],
         "type": "p",
@@ -213,17 +225,20 @@ ShallowWrapper {
 </h3>,
           Array [
             <p>
-              Seats: 
+              Seats
+              : 
               Heart's Home
 </p>,
           ],
           Array [
             <p>
-              Titles: 
+              Titles
+              : 
               Lord of Heart's Home
 </p>,
             <p>
-              Titles: 
+              Titles
+              : 
               King of the Fingers (historical)
 </p>,
           ],
@@ -233,7 +248,8 @@ ShallowWrapper {
 </p>,
           Array [
             <p>
-              Ancestral Weapons: 
+              Ancestral Weapons
+              : 
               Lady Forlorn
 </p>,
           ],
@@ -278,13 +294,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Seats: ",
+              "Seats",
+              ": ",
               "Heart's Home",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Seats: ",
+            "Seats",
+            ": ",
             "Heart's Home",
           ],
           "type": "p",
@@ -295,13 +313,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Titles: ",
+              "Titles",
+              ": ",
               "Lord of Heart's Home",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Titles: ",
+            "Titles",
+            ": ",
             "Lord of Heart's Home",
           ],
           "type": "p",
@@ -312,13 +332,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Titles: ",
+              "Titles",
+              ": ",
               "King of the Fingers (historical)",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Titles: ",
+            "Titles",
+            ": ",
             "King of the Fingers (historical)",
           ],
           "type": "p",
@@ -346,13 +368,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Ancestral Weapons: ",
+              "Ancestral Weapons",
+              ": ",
               "Lady Forlorn",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Ancestral Weapons: ",
+            "Ancestral Weapons",
+            ": ",
             "Lady Forlorn",
           ],
           "type": "p",

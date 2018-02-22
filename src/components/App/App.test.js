@@ -40,16 +40,12 @@ describe('App', () => {
     expect(mapStateToProps(mockStore)).toEqual(expected);
   });
 
-  it.skip('should map dispatch correctly', () => {
+  it('should call dispatch when an action is called', () => {
     const mockDispatch = jest.fn();
-    // const expected = ({
-      // addHouses: houses => mockDispatch(addHouses(houses))
-    // });
 
-    mapDispatchToProps(mockDispatch);
+    console.log(wrapper.props);
 
     expect(mockDispatch).toHaveBeenCalled();
 
-    // expect(mapDispatchToProps(mockDispatch)).toEqual(expected);
   })
 });
