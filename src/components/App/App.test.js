@@ -1,18 +1,25 @@
 import React from 'react';
 import { App, mapStateToProps, mapDispatchToProps } from './App';
-import { getHouses } from '../../api/apiCall';
+import { getHouses, getSwornMembers } from '../../api/apiCall';
 import { shallow } from 'enzyme';
 
 describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
-    const mockHouses = [
-      { name: "House Corbray of Heart's Home" },
-      { name: "House Dayne of Starfall" }
-    ];
+    const mockHouses = [{
+      name: '',
+      founded: '',
+      seats: [''],
+      titles: [''],
+      coatOfArms: '',
+      ancestralWeapons: [''],
+      words: '',
+      swornMembers: [{}]
+    }]
 
-    wrapper = shallow(<App addHouses={ jest.fn() } houses={ mockHouses }/>, { disableLifecycleMethods: true })
+    wrapper = shallow(<App addHouses={ jest.fn() }
+                           houses={ mockHouses } />, { disableLifecycleMethods: true })
   })
 
   it('should match snapshot when houses are NOT loaded', () => {
@@ -28,10 +35,16 @@ describe('App', () => {
   });
 
   it('should map state correctly', () => {
-    const mockHouses = [
-      { name: "House Corbray of Heart's Home" },
-      { name: "House Dayne of Starfall" }
-    ]
+    const mockHouses = [{
+      name: '',
+      founded: '',
+      seats: [''],
+      titles: [''],
+      coatOfArms: '',
+      ancestralWeapons: [''],
+      words: '',
+      swornMembers: [{}]
+    }]
     const mockStore = {
       houses: mockHouses
     }
@@ -40,16 +53,12 @@ describe('App', () => {
     expect(mapStateToProps(mockStore)).toEqual(expected);
   });
 
-  it.skip('should map dispatch correctly', () => {
+  it('should call dispatch when an action is called', () => {
     const mockDispatch = jest.fn();
-    // const expected = ({
-      // addHouses: houses => mockDispatch(addHouses(houses))
-    // });
 
-    mapDispatchToProps(mockDispatch);
+    mapDispatchToProps(mockDispatch).addHouses();
 
     expect(mockDispatch).toHaveBeenCalled();
-
-    // expect(mapDispatchToProps(mockDispatch)).toEqual(expected);
-  })
+  });
+  
 });

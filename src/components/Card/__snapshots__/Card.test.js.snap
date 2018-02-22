@@ -4,7 +4,7 @@ exports[`Card should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <Card
     ancestralWeapons={
         Array [
             "Lady Forlorn",
@@ -16,6 +16,11 @@ ShallowWrapper {
     seats={
         Array [
             "Heart's Home",
+          ]
+    }
+    swornMembers={
+        Array [
+            Object {},
           ]
     }
     titles={
@@ -48,17 +53,20 @@ ShallowWrapper {
 </h3>,
         Array [
           <p>
-            Seats: 
+            Seats
+            : 
             Heart's Home
 </p>,
         ],
         Array [
           <p>
-            Titles: 
+            Titles
+            : 
             Lord of Heart's Home
 </p>,
           <p>
-            Titles: 
+            Titles
+            : 
             King of the Fingers (historical)
 </p>,
         ],
@@ -68,12 +76,15 @@ ShallowWrapper {
 </p>,
         Array [
           <p>
-            Ancestral Weapons: 
+            Ancestral Weapons
+            : 
             Lady Forlorn
 </p>,
         ],
         null,
+        false,
       ],
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -111,13 +122,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Seats: ",
+            "Seats",
+            ": ",
             "Heart's Home",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Seats: ",
+          "Seats",
+          ": ",
           "Heart's Home",
         ],
         "type": "p",
@@ -128,13 +141,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Titles: ",
+            "Titles",
+            ": ",
             "Lord of Heart's Home",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Titles: ",
+          "Titles",
+          ": ",
           "Lord of Heart's Home",
         ],
         "type": "p",
@@ -145,13 +160,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Titles: ",
+            "Titles",
+            ": ",
             "King of the Fingers (historical)",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Titles: ",
+          "Titles",
+          ": ",
           "King of the Fingers (historical)",
         ],
         "type": "p",
@@ -179,18 +196,21 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Ancestral Weapons: ",
+            "Ancestral Weapons",
+            ": ",
             "Lady Forlorn",
           ],
         },
         "ref": null,
         "rendered": Array [
-          "Ancestral Weapons: ",
+          "Ancestral Weapons",
+          ": ",
           "Lady Forlorn",
         ],
         "type": "p",
       },
       null,
+      false,
     ],
     "type": "div",
   },
@@ -210,17 +230,20 @@ ShallowWrapper {
 </h3>,
           Array [
             <p>
-              Seats: 
+              Seats
+              : 
               Heart's Home
 </p>,
           ],
           Array [
             <p>
-              Titles: 
+              Titles
+              : 
               Lord of Heart's Home
 </p>,
             <p>
-              Titles: 
+              Titles
+              : 
               King of the Fingers (historical)
 </p>,
           ],
@@ -230,12 +253,15 @@ ShallowWrapper {
 </p>,
           Array [
             <p>
-              Ancestral Weapons: 
+              Ancestral Weapons
+              : 
               Lady Forlorn
 </p>,
           ],
           null,
+          false,
         ],
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -273,13 +299,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Seats: ",
+              "Seats",
+              ": ",
               "Heart's Home",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Seats: ",
+            "Seats",
+            ": ",
             "Heart's Home",
           ],
           "type": "p",
@@ -290,13 +318,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Titles: ",
+              "Titles",
+              ": ",
               "Lord of Heart's Home",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Titles: ",
+            "Titles",
+            ": ",
             "Lord of Heart's Home",
           ],
           "type": "p",
@@ -307,13 +337,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Titles: ",
+              "Titles",
+              ": ",
               "King of the Fingers (historical)",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Titles: ",
+            "Titles",
+            ": ",
             "King of the Fingers (historical)",
           ],
           "type": "p",
@@ -341,18 +373,21 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Ancestral Weapons: ",
+              "Ancestral Weapons",
+              ": ",
               "Lady Forlorn",
             ],
           },
           "ref": null,
           "rendered": Array [
-            "Ancestral Weapons: ",
+            "Ancestral Weapons",
+            ": ",
             "Lady Forlorn",
           ],
           "type": "p",
         },
         null,
+        false,
       ],
       "type": "div",
     },

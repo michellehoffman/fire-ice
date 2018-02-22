@@ -13,7 +13,8 @@ describe('Card', () => {
       titles: ["Lord of Heart's Home", "King of the Fingers (historical)"],
       coatOfArms: "Three black ravens in flight,",
       ancestralWeapons: ["Lady Forlorn"],
-      words: ""
+      words: "",
+      swornMembers: [{}]
     }
     wrapper = shallow(<Card { ...mockHouse } />)
   });

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
+import { func, arrayOf, object } from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
@@ -38,7 +38,7 @@ export class App extends Component {
           <img src={logo} className='App-logo' alt='logo' />
           <h2>Welcome to Westeros</h2>
         </div>
-        <div className='Display-info'>
+        <div className='Display-info Container'>
           { !this.state.loaded &&
             <img src={ gif } alt='wolf gif' />
           }
@@ -53,8 +53,8 @@ export class App extends Component {
 }
 
 App.propTypes = {
-  fake: shape({ fake: string }),
-  addHouses: func.isRequired
+  addHouses: func.isRequired,
+  houses: arrayOf(object).isRequired
 };
 
 export const mapStateToProps = ({ houses }) => ({ houses });
