@@ -18,6 +18,11 @@ ShallowWrapper {
             "Heart's Home",
           ]
     }
+    swornMembers={
+        Array [
+            Object {},
+          ]
+    }
     titles={
         Array [
             "Lord of Heart's Home",

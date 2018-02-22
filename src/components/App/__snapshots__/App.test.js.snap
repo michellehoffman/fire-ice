@@ -9,10 +9,22 @@ ShallowWrapper {
     houses={
         Array [
             Object {
-              "name": "House Corbray of Heart's Home",
-            },
-            Object {
-              "name": "House Dayne of Starfall",
+              "ancestralWeapons": Array [
+                "",
+              ],
+              "coatOfArms": "",
+              "founded": "",
+              "name": "",
+              "seats": Array [
+                "",
+              ],
+              "swornMembers": Array [
+                Object {},
+              ],
+              "titles": Array [
+                "",
+              ],
+              "words": "",
             },
           ]
     }
@@ -270,10 +282,22 @@ ShallowWrapper {
     houses={
         Array [
             Object {
-              "name": "House Corbray of Heart's Home",
-            },
-            Object {
-              "name": "House Dayne of Starfall",
+              "ancestralWeapons": Array [
+                "",
+              ],
+              "coatOfArms": "",
+              "founded": "",
+              "name": "",
+              "seats": Array [
+                "",
+              ],
+              "swornMembers": Array [
+                Object {},
+              ],
+              "titles": Array [
+                "",
+              ],
+              "words": "",
             },
           ]
     }
@@ -307,10 +331,30 @@ ShallowWrapper {
           className="Display-info"
 >
           <Card
-                    name="House Corbray of Heart's Home"
-          />
-          <Card
-                    name="House Dayne of Starfall"
+                    ancestralWeapons={
+                              Array [
+                                        "",
+                                      ]
+                    }
+                    coatOfArms=""
+                    founded=""
+                    name=""
+                    seats={
+                              Array [
+                                        "",
+                                      ]
+                    }
+                    swornMembers={
+                              Array [
+                                        Object {},
+                                      ]
+                    }
+                    titles={
+                              Array [
+                                        "",
+                                      ]
+                    }
+                    words=""
           />
 </div>,
       ],
@@ -373,10 +417,30 @@ ShallowWrapper {
             false,
             Array [
               <Card
-                name="House Corbray of Heart's Home"
-/>,
-              <Card
-                name="House Dayne of Starfall"
+                ancestralWeapons={
+                                Array [
+                                                "",
+                                              ]
+                }
+                coatOfArms=""
+                founded=""
+                name=""
+                seats={
+                                Array [
+                                                "",
+                                              ]
+                }
+                swornMembers={
+                                Array [
+                                                Object {},
+                                              ]
+                }
+                titles={
+                                Array [
+                                                "",
+                                              ]
+                }
+                words=""
 />,
             ],
           ],
@@ -387,21 +451,25 @@ ShallowWrapper {
           false,
           Object {
             "instance": null,
-            "key": "0House Corbray of Heart's Home",
+            "key": "0",
             "nodeType": "class",
             "props": Object {
-              "name": "House Corbray of Heart's Home",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "1House Dayne of Starfall",
-            "nodeType": "class",
-            "props": Object {
-              "name": "House Dayne of Starfall",
+              "ancestralWeapons": Array [
+                "",
+              ],
+              "coatOfArms": "",
+              "founded": "",
+              "name": "",
+              "seats": Array [
+                "",
+              ],
+              "swornMembers": Array [
+                Object {},
+              ],
+              "titles": Array [
+                "",
+              ],
+              "words": "",
             },
             "ref": null,
             "rendered": null,
@@ -436,10 +504,30 @@ ShallowWrapper {
             className="Display-info"
 >
             <Card
-                        name="House Corbray of Heart's Home"
-            />
-            <Card
-                        name="House Dayne of Starfall"
+                        ancestralWeapons={
+                                    Array [
+                                                "",
+                                              ]
+                        }
+                        coatOfArms=""
+                        founded=""
+                        name=""
+                        seats={
+                                    Array [
+                                                "",
+                                              ]
+                        }
+                        swornMembers={
+                                    Array [
+                                                Object {},
+                                              ]
+                        }
+                        titles={
+                                    Array [
+                                                "",
+                                              ]
+                        }
+                        words=""
             />
 </div>,
         ],
@@ -502,10 +590,30 @@ ShallowWrapper {
               false,
               Array [
                 <Card
-                  name="House Corbray of Heart's Home"
-/>,
-                <Card
-                  name="House Dayne of Starfall"
+                  ancestralWeapons={
+                                    Array [
+                                                      "",
+                                                    ]
+                  }
+                  coatOfArms=""
+                  founded=""
+                  name=""
+                  seats={
+                                    Array [
+                                                      "",
+                                                    ]
+                  }
+                  swornMembers={
+                                    Array [
+                                                      Object {},
+                                                    ]
+                  }
+                  titles={
+                                    Array [
+                                                      "",
+                                                    ]
+                  }
+                  words=""
 />,
               ],
             ],
@@ -516,21 +624,25 @@ ShallowWrapper {
             false,
             Object {
               "instance": null,
-              "key": "0House Corbray of Heart's Home",
+              "key": "0",
               "nodeType": "class",
               "props": Object {
-                "name": "House Corbray of Heart's Home",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "1House Dayne of Starfall",
-              "nodeType": "class",
-              "props": Object {
-                "name": "House Dayne of Starfall",
+                "ancestralWeapons": Array [
+                  "",
+                ],
+                "coatOfArms": "",
+                "founded": "",
+                "name": "",
+                "seats": Array [
+                  "",
+                ],
+                "swornMembers": Array [
+                  Object {},
+                ],
+                "titles": Array [
+                  "",
+                ],
+                "words": "",
               },
               "ref": null,
               "rendered": null,

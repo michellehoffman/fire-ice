@@ -7,13 +7,19 @@ describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
-    const mockHouses = [
-      { name: "House Corbray of Heart's Home" },
-      { name: "House Dayne of Starfall" }
-    ];
+    const mockHouses = [{
+      name: '',
+      founded: '',
+      seats: [''],
+      titles: [''],
+      coatOfArms: '',
+      ancestralWeapons: [''],
+      words: '',
+      swornMembers: [{}]
+    }]
 
     wrapper = shallow(<App addHouses={ jest.fn() }
-                          houses={ mockHouses } />, { disableLifecycleMethods: true })
+                           houses={ mockHouses } />, { disableLifecycleMethods: true })
   })
 
   it('should match snapshot when houses are NOT loaded', () => {
@@ -29,10 +35,16 @@ describe('App', () => {
   });
 
   it('should map state correctly', () => {
-    const mockHouses = [
-      { name: "House Corbray of Heart's Home" },
-      { name: "House Dayne of Starfall" }
-    ]
+    const mockHouses = [{
+      name: '',
+      founded: '',
+      seats: [''],
+      titles: [''],
+      coatOfArms: '',
+      ancestralWeapons: [''],
+      words: '',
+      swornMembers: [{}]
+    }]
     const mockStore = {
       houses: mockHouses
     }
