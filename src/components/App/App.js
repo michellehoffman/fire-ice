@@ -5,11 +5,30 @@ import './App.css';
 import { connect } from 'react-redux';
 import { addHouses } from '../../actions';
 import { getHouses } from '../../api/apiCall';
+import gif from '../../assets/wolf.gif';
+import { Card } from '../Card/Card';
 
-class App extends Component {
+export class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      loaded: false
+    }
+  }
+
   async componentDidMount() {
     const houses = await getHouses();
     this.props.addHouses(houses);
+    if(this.props.houses) {
+      this.setState({ loaded: true })
+    }
+  }
+
+  renderCards = () => {
+    return this.props.houses.map( (house, index) => (
+      <Card key = { index + house.name } { ...house } />)
+    )
   }
 
   render() {
@@ -20,6 +39,13 @@ class App extends Component {
           <h2>Welcome to Westeros</h2>
         </div>
         <div className='Display-info'>
+          { !this.state.loaded &&
+            <img src={ gif } alt='wolf gif' />
+          }
+          {
+            this.state.loaded &&
+              this.renderCards()
+          }
         </div>
       </div>
     );
@@ -31,8 +57,10 @@ App.propTypes = {
   addHouses: func.isRequired
 };
 
-const mapStateToProps = ({ fake }) => ({ fake });
-const mapDispatchToProps = dispatch => ({ addHouses:
-  houses => dispatch(addHouses(houses))
+export const mapStateToProps = ({ houses }) => ({ houses });
+
+export const mapDispatchToProps = dispatch => ({ 
+  addHouses: houses => dispatch(addHouses(houses))
 });
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);
