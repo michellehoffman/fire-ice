@@ -4,19 +4,7 @@ exports[`App should match snapshot when houses are NOT loaded 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App
-    addHouses={[Function]}
-    houses={
-        Array [
-            Object {
-              "name": "House Corbray of Heart's Home",
-            },
-            Object {
-              "name": "House Dayne of Starfall",
-            },
-          ]
-    }
-/>,
+  Symbol(enzyme.__unrendered__): <App />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
