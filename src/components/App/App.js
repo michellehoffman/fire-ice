@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { addHouses } from '../../actions';
 import { getHouses } from '../../api/apiCall';
 import gif from '../../assets/wolf.gif';
+import { Card } from '../Card/Card';
 
 class App extends Component {
   constructor(props) {
@@ -19,7 +20,13 @@ class App extends Component {
   async componentDidMount() {
     const houses = await getHouses();
     this.props.addHouses(houses);
-    this.setState({ loaded: true })
+    if(this.props.houses) {
+      this.setState({ loaded: true })
+    }
+  }
+
+  renderCards = () => {
+    return this.props.houses.map( house => <Card { ...house } />)
   }
 
   render() {
@@ -32,6 +39,10 @@ class App extends Component {
         <div className='Display-info'>
           { !this.state.loaded &&
             <img src={ gif } alt='wolf gif' />
+          }
+          {
+            this.state.loaded &&
+              this.renderCards()
           }
         </div>
       </div>
