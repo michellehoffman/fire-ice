@@ -13,6 +13,12 @@ export class Card extends Component {
     return founded !== '' ? founded : 'N/A'
   }
 
+  renderDetails = details => {
+    return details.map( (detail, index) => {
+      return <p key={ index + detail }>{`${details}`}: { detail }</p>
+    } )
+  }
+
   renderSeats = seats => {
     return seats.map( (seat, index) => <p key={ index + seat }>Seats: { seat }</p> )
   }
@@ -36,11 +42,11 @@ export class Card extends Component {
   }
 
   renderMembers = swornMembers => {
-    return swornMembers.map( member => <p>{ member.name }: { this.status(member.died) } </p>)
-  }
+    const status = (status) => status !== '' ? status : 'alive' 
 
-  status = (status) => {
-    return status !== '' ? status : 'alive'
+    return swornMembers.map( (member, index) => (
+      <p key={ index + member.name }>{ member.name }: { status(member.died) } </p>)
+    )
   }
 
   render() {

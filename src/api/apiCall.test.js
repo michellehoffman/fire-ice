@@ -1,15 +1,23 @@
-import { getHouses } from './apiCall';
+import { getHouses, getSwornMembers } from './apiCall';
 
 describe('get', () => {
   beforeEach(() => {
     const mockHouses = [
-      { name: "House Corbray of Heart's Home" },
-      { name: "House Dayne of Starfall" }
+      { name: "House Corbray of Heart's Home",
+        swornMembers: ["one", "two"]
+      },
+      { name: "House Dayne of Starfall",
+        swornMembers: ["one", "two"]
+      }
     ]
+
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       status: 200,
-      json: () => Promise.resolve(mockHouses)
+      json: () => Promise.resolve()
     }));
+
+    getHouses => getSwornMembers()
+    getSwornMembers => (mockHouses)
   });
 
   it('should call fetch with the correct params', () => {

@@ -4,7 +4,7 @@ exports[`Card should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <Card
     ancestralWeapons={
         Array [
             "Lady Forlorn",
@@ -73,7 +73,9 @@ ShallowWrapper {
 </p>,
         ],
         null,
+        false,
       ],
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -191,6 +193,7 @@ ShallowWrapper {
         "type": "p",
       },
       null,
+      false,
     ],
     "type": "div",
   },
@@ -235,7 +238,9 @@ ShallowWrapper {
 </p>,
           ],
           null,
+          false,
         ],
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -353,6 +358,7 @@ ShallowWrapper {
           "type": "p",
         },
         null,
+        false,
       ],
       "type": "div",
     },

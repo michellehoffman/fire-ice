@@ -306,10 +306,10 @@ ShallowWrapper {
         <div
           className="Display-info"
 >
-          <Unknown
+          <Card
                     name="House Corbray of Heart's Home"
           />
-          <Unknown
+          <Card
                     name="House Dayne of Starfall"
           />
 </div>,
@@ -372,10 +372,10 @@ ShallowWrapper {
           "children": Array [
             false,
             Array [
-              <Unknown
+              <Card
                 name="House Corbray of Heart's Home"
 />,
-              <Unknown
+              <Card
                 name="House Dayne of Starfall"
 />,
             ],
@@ -388,7 +388,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": "0House Corbray of Heart's Home",
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "name": "House Corbray of Heart's Home",
             },
@@ -399,7 +399,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": "1House Dayne of Starfall",
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
               "name": "House Dayne of Starfall",
             },
@@ -435,10 +435,10 @@ ShallowWrapper {
           <div
             className="Display-info"
 >
-            <Unknown
+            <Card
                         name="House Corbray of Heart's Home"
             />
-            <Unknown
+            <Card
                         name="House Dayne of Starfall"
             />
 </div>,
@@ -501,10 +501,10 @@ ShallowWrapper {
             "children": Array [
               false,
               Array [
-                <Unknown
+                <Card
                   name="House Corbray of Heart's Home"
 />,
-                <Unknown
+                <Card
                   name="House Dayne of Starfall"
 />,
               ],
@@ -517,7 +517,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": "0House Corbray of Heart's Home",
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {
                 "name": "House Corbray of Heart's Home",
               },
@@ -528,7 +528,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": "1House Dayne of Starfall",
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {
                 "name": "House Dayne of Starfall",
               },
