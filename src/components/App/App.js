@@ -8,7 +8,7 @@ import { getHouses } from '../../api/apiCall';
 import gif from '../../assets/wolf.gif';
 import { Card } from '../Card/Card';
 
-class App extends Component {
+export class App extends Component {
   constructor(props) {
     super(props)
 
@@ -55,8 +55,10 @@ App.propTypes = {
   addHouses: func.isRequired
 };
 
-const mapStateToProps = ({ houses }) => ({ houses });
-const mapDispatchToProps = dispatch => ({ addHouses:
+export const mapStateToProps = ({ houses }) => ({ houses });
+
+export const mapDispatchToProps = dispatch => ({ addHouses:
   houses => dispatch(addHouses(houses))
 });
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);
