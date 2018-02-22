@@ -1,37 +1,65 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export const Card = ({ name, founded, seats, titles, coatOfArms, ancestralWeapons, words }) => {
-  const cleanFounded = () => {
+export class Card extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      clicked: false
+    }
+  }
+
+  cleanFounded = founded => {
     return founded !== '' ? founded : 'N/A'
   }
 
-  const renderSeats = () => {
+  renderSeats = seats => {
     return seats.map( (seat, index) => <p key={ index + seat }>Seats: { seat }</p> )
   }
 
-  const renderTitles = () => {
+  renderTitles = titles => {
     return titles.map( (title, index) => <p key={ index + title }>Titles: { title }</p> )
   }
 
-  const renderWeapons = () => {
-    return ancestralWeapons.map( (weapon, index) => <p key={ index + weapon }>Ancestral Weapons: { weapon }</p> )
+  renderWeapons = ancestralWeapons => {
+    return ancestralWeapons.map( (weapon, index) => (
+      <p key={ index + weapon }>Ancestral Weapons: { weapon }</p> )
+    )
   }
 
-  const renderWords = () => {
+  renderWords = words => {
     return words !== '' ? <p>Words: { words }</p> : null
   }
 
-  return (
-    <div>
-      <h2>{ name }</h2>
-      <h3>Founded: { cleanFounded() }</h3>
-      { renderSeats() }
-      { renderTitles() }
-      <p>Coat of Arms: { coatOfArms }</p>
-      { renderWeapons() }
-      { renderWords() }
-    </div>
-  )
-}
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked })
+  }
 
-// Things to display: name, founded, seats, titles, coatOfArms, ancestralWeapons, words
+  renderMembers = swornMembers => {
+    return swornMembers.map( member => <p>{ member.name }: { this.status(member.died) } </p>)
+  }
+
+  status = (status) => {
+    return status !== '' ? status : 'alive'
+  }
+
+  render() {
+    const { name, founded, seats, titles, coatOfArms, ancestralWeapons, words, swornMembers } = this.props
+    
+    return (
+      <div onClick={ this.handleClick }>
+        <h2>{ name }</h2>
+        <h3>Founded: { this.cleanFounded(founded) }</h3>
+        { this.renderSeats(seats) }
+        { this.renderTitles(titles) }
+        <p>Coat of Arms: { coatOfArms }</p>
+        { this.renderWeapons(ancestralWeapons) }
+        { this.renderWords(words) }
+        {
+          this.state.clicked &&
+          this.renderMembers(swornMembers)
+        }
+      </div>
+    )
+  }
+}
