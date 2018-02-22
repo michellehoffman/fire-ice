@@ -38,7 +38,7 @@ export class App extends Component {
           <img src={logo} className='App-logo' alt='logo' />
           <h2>Welcome to Westeros</h2>
         </div>
-        <div className='Display-info'>
+        <div className='Display-info Container'>
           { !this.state.loaded &&
             <img src={ gif } alt='wolf gif' />
           }

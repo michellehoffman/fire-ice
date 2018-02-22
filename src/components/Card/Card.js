@@ -40,7 +40,7 @@ export class Card extends Component {
     const { name, founded, seats, titles, coatOfArms, ancestralWeapons, words, swornMembers } = this.props
     
     return (
-      <div onClick={ this.handleClick }>
+      <div className='Card' onClick={ this.handleClick }>
         <h2>{ name }</h2>
         <h3>Founded: { this.cleanFounded(founded) }</h3>
         { this.renderDetails(seats, 'Seats') }
