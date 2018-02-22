@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
+import { shape, func, bool, arrayOf, object } from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
 import { connect } from 'react-redux';
@@ -32,6 +32,7 @@ export class App extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div className='App'>
         <div className='App-header'>
@@ -53,8 +54,8 @@ export class App extends Component {
 }
 
 App.propTypes = {
-  fake: shape({ fake: string }),
-  addHouses: func.isRequired
+  addHouses: func.isRequired,
+  houses: arrayOf(object).isRequired
 };
 
 export const mapStateToProps = ({ houses }) => ({ houses });

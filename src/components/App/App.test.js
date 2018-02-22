@@ -21,7 +21,7 @@ describe('App', () => {
       { name: "House Corbray of Heart's Home" },
       { name: "House Dayne of Starfall" }
     ];
-    
+
     wrapper = shallow(<App addHouses={ jest.fn() } houses={ mockHouses } />, { disableLifecycleMethods: true })
     wrapper.setState({ loaded: true })
 
@@ -47,6 +47,6 @@ describe('App', () => {
     mapDispatchToProps(mockDispatch).addHouses();
 
     expect(mockDispatch).toHaveBeenCalled();
-
-  })
+  });
+  
 });

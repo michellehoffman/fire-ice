@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { arrayOf, string, object } from 'prop-types';
 
 export class Card extends Component {
   constructor(props) {
@@ -23,16 +24,16 @@ export class Card extends Component {
     return words !== '' ? <p>Words: { words }</p> : null
   }
 
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked })
-  }
-
   renderMembers = swornMembers => {
     const status = (status) => status !== '' ? status : 'alive' 
 
     return swornMembers.map( (member, index) => (
       <p key={ index + member.name }>{ member.name }: { status(member.died) } </p>)
     )
+  }
+
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked })
   }
 
   render() {
@@ -55,3 +56,14 @@ export class Card extends Component {
     )
   }
 }
+
+Card.propTypes = {
+  name: string.isRequired,
+  founded: string.isRequired,
+  seats: arrayOf(string).isRequired,
+  titles: arrayOf(string).isRequired,
+  coatOfArms: string.isRequired,
+  ancestralWeapons: arrayOf(string).isRequired,
+  words: string.isRequired,
+  swornMembers: arrayOf(object).isRequired
+};
