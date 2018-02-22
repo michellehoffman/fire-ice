@@ -7,7 +7,13 @@ describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<App />, { disableLifecycleMethods: true })
+    const mockHouses = [
+      { name: "House Corbray of Heart's Home" },
+      { name: "House Dayne of Starfall" }
+    ];
+
+    wrapper = shallow(<App addHouses={ jest.fn() }
+                          houses={ mockHouses } />, { disableLifecycleMethods: true })
   })
 
   it('should match snapshot when houses are NOT loaded', () => {
@@ -17,12 +23,6 @@ describe('App', () => {
   })
 
   it('should match snapshot when houses are loaded', () => {
-    const mockHouses = [
-      { name: "House Corbray of Heart's Home" },
-      { name: "House Dayne of Starfall" }
-    ];
-
-    wrapper = shallow(<App addHouses={ jest.fn() } houses={ mockHouses } />, { disableLifecycleMethods: true })
     wrapper.setState({ loaded: true })
 
     expect(wrapper).toMatchSnapshot();
