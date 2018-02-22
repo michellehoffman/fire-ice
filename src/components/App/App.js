@@ -57,8 +57,8 @@ App.propTypes = {
 
 export const mapStateToProps = ({ houses }) => ({ houses });
 
-export const mapDispatchToProps = dispatch => ({ addHouses:
-  houses => dispatch(addHouses(houses))
+export const mapDispatchToProps = dispatch => ({ 
+  addHouses: houses => dispatch(addHouses(houses))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
