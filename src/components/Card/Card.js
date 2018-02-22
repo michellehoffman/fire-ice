@@ -13,23 +13,9 @@ export class Card extends Component {
     return founded !== '' ? founded : 'N/A'
   }
 
-  renderDetails = details => {
-    return details.map( (detail, index) => {
-      return <p key={ index + detail }>{`${details}`}: { detail }</p>
-    } )
-  }
-
-  renderSeats = seats => {
-    return seats.map( (seat, index) => <p key={ index + seat }>Seats: { seat }</p> )
-  }
-
-  renderTitles = titles => {
-    return titles.map( (title, index) => <p key={ index + title }>Titles: { title }</p> )
-  }
-
-  renderWeapons = ancestralWeapons => {
-    return ancestralWeapons.map( (weapon, index) => (
-      <p key={ index + weapon }>Ancestral Weapons: { weapon }</p> )
+  renderDetails = (details, type) => {
+    return details.map( (detail, index) => (
+      <p key={ index + detail }>{ type }: { detail }</p> )
     )
   }
 
@@ -56,10 +42,10 @@ export class Card extends Component {
       <div onClick={ this.handleClick }>
         <h2>{ name }</h2>
         <h3>Founded: { this.cleanFounded(founded) }</h3>
-        { this.renderSeats(seats) }
-        { this.renderTitles(titles) }
+        { this.renderDetails(seats, 'Seats') }
+        { this.renderDetails(titles, 'Titles') }
         <p>Coat of Arms: { coatOfArms }</p>
-        { this.renderWeapons(ancestralWeapons) }
+        { this.renderDetails(ancestralWeapons, 'Ancestral Weapons') }
         { this.renderWords(words) }
         {
           this.state.clicked &&
