@@ -1,4 +1,5 @@
 export const getHouses = async() => {
+  console.log('WHY THO')
   try {
     const response = await fetch('http://localhost:3001/api/v1/houses');
     const results = await response.json();

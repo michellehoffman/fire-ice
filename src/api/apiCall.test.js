@@ -1,6 +1,6 @@
 import { getHouses, getSwornMembers } from './apiCall';
 
-describe('get', () => {
+describe.skip('getHouses', () => {
   beforeEach(() => {
     const mockHouses = [
       { name: "House Corbray of Heart's Home",
@@ -13,11 +13,9 @@ describe('get', () => {
 
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       status: 200,
-      json: () => Promise.resolve()
+      json: () => Promise.resolve(mockHouses)
     }));
 
-    getHouses => getSwornMembers()
-    getSwornMembers => (mockHouses)
   });
 
   it('should call fetch with the correct params', () => {
@@ -44,4 +42,45 @@ describe('get', () => {
 
     expect(getHouses()).rejects.toEqual(Error);
   })
+});
+
+describe('getSwornMembers', () => {
+  beforeEach(() => {
+    const members = [{ name: 'Member1' }]
+
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      status: 200,
+      json: () => Promise.resolve(members)
+    }));
+  });
+
+  it('should call fetch with the right params', () => {
+    const array = [{ swornMembers: 'url' }]
+    const expected = 'url';
+
+    getSwornMembers();
+
+    expect(window.fetch).toHaveBeenCalledWith(expected);
+  });
+
+  it('should return the array of houses with members', () => {
+    const mockHouses = [
+      { name: "House Corbray of Heart's Home" },
+      { name: "House Dayne of Starfall" }
+    ]
+    const expected = [
+      { name: "House Corbray of Heart's Home", swornMembers: 'Member1' },
+      { name: "House Dayne of Starfall", swornMembers: 'Member1' }
+    ]
+
+    expect(getSwornMembers(mockHouses)).resolves.toEqual(expected);
+  });
+
+  it('should throw an error if fetch fails', () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolves({
+      status: 500
+    }))
+
+    expect(getSwornMembers()).rejects.toEqual(Error)
+  });
 });
